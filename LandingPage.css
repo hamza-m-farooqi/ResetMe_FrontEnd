@@ -807,7 +807,7 @@ body {
   line-height: 21px;
 }
 .mob_nav_dropdown {
-  background: url('../../images/LandingImages/BG.svg');
+  background: url('images/LandingImages/BG.svg');
   width: 92%;
   height: 100vh;
   display: flex;
