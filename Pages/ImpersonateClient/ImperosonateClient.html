@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../AgentClientList/AgentClientList.css" />
+    <link rel="stylesheet" href="../Assessments/Assessments.css" />
+    <link rel="stylesheet" href="ImperosonateClient.css" />
+    <link rel="stylesheet" href="../Login/Login.css" />
+    <link rel="stylesheet" href="../../CSS/common.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Smooch Sans" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+function toggleMenu() {
+      // var dropdown = document.getElementById("show");
+      // if (dropdown.style.display === "none") {
+      //   dropdown.style.display = "block";
+      // } else {
+      //   dropdown.style.display = "none";
+      // }
+      var showElement = document.getElementById("show");
+    var randomName = document.getElementById("randomName");
+    
+    // Toggle the display of the "show" element
+    if (showElement.style.display === "none") {
+      showElement.style.display = "block";
+      randomName.style.display = "none";
+    } else {
+      showElement.style.display = "none";
+      randomName.style.display = "block";
+    }
+    };
+    function toggleDots() {
+  var showElement = document.getElementById("tooltipMLx");
+
+  if (showElement.style.display === "none") {
+    showElement.style.display = "block";
+  } else {
+    showElement.style.display = "none";
+  }
+}
+
+var button = document.getElementById("dotsBTN");
+
+button.addEventListener("click", toggleDots);
+button.addEventListener("blur", toggleDots);
+    </script>
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="../../CSS/common.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="assessments" style="position: relative">
+      <div class="left_side_assessments">
+        <div class="left_side_logo_div">
+          <img src="../../images/assessments/resetLogo.svg" class="left_side_logo" />
+        </div>
+        <div class="left_side_assessments_options left_side_agent_options mb-4">
+          <div class="agent_logo">
+            <img src="../../images/agent/logo.svg" alt="logo" />
+          </div>
+          <div class="agent_username">Robi Agent</div>
+          <span class="agent_view">Agent View</span>
+        </div>
+        <div class="help_center_div" style="position: relative">
+          <h2 style="padding-top: 4rem">Help Center</h2>
+          <h4
+            style="
+              padding-left: 3rem;
+              padding-right: 3rem;
+              color: #454238;
+              font-weight: 300;
+              line-height: 1.6;
+              font-size: 14px;
+            "
+          >
+            Having trouble with our service? Need help? Click the button below for assistance!
+          </h4>
+          <button class="contact_support_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contact Support
+          </button>
+          <div
+            style="
+              height: 6rem;
+              width: 6rem;
+              border-radius: 50%;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              top: -3rem;
+              left: 40%;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+                background-color: #419eac;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+              "
+            >
+              ?
+            </div>
+          </div>
+        </div>
+        <div class="user_info_div">
+          <span class="tooltip-text" id="tooltip">
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#editProfile">
+              <span>
+                <img src="../../images/assessments/edit_profile.svg" />
+              </span>
+              <span class="ml-4"> Edit Profile</span>
+            </div>
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#logout">
+              <span class="pr-4">
+                <img src="../../images/assessments/logout.svg" />
+              </span>
+              <span> Logout</span>
+            </div>
+          </span>
+          <div class="user_info_div_1">
+            <span class="user_name">Younas Akram</span>
+            <span class="user_email">Client123</span>
+          </div>
+          <div class="user_info_div_2">
+            <img src="../../images/assessments/tooltipIcon.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="right_side_assessments" id="randomName">
+        <div class="breadcrumb_div" id="breadOwn">
+          <div class="adminClntImpMenuu" id="menu-toggle" onclick="toggleMenu()">
+            <img src="../../images/AdminClientImpersonate/VectorMenuIcon.svg" alt="" />
+         </div>
+          <span class="breadcrumb_text" id="breadCrumbMbl">
+            List of Client &nbsp&nbsp&nbsp
+            <span class="blue_Slash">/</span> &nbsp&nbsp&nbsp
+            <span class="active_breadcrumb_text">Client</span>
+          </span>
+        </div>
+        <div class="client_div">
+          <div class="inner_client_div">
+            <div class="left_inner">
+              <div class="name_email">
+                <h1 class="name">Christopher</h1>
+                <span class="email">Demo@gmail.com</span>
+              </div>
+              <div class="divider"></div>
+              <button class="client_btn">Client</button>
+            </div>
+            <div class="all_btns">
+              <button class="edit_btn">
+                <img src="../../images/agent/Icon-7.svg" alt="" />
+              </button>
+              <button
+              id="mlbxbtn"
+                data-bs-target="#thankYou_modal"
+                data-bs-toggle="modal"
+                class="impersonation_btn"
+              >
+                End Impersonation
+                <img src="../../images//ImpersonateClient/circle.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="Readiness_div">
+          <div class="headin_tabs">
+            <span>
+              <span class="assesment">Assessments</span> &nbsp
+              <span class="blue_Slash small">/</span> &nbsp
+              <span class="stress">Stress Management</span>
+              &nbsp
+              <span class="grey_divider">|</span> &nbsp
+              <span class="greyed">Physical Wellbeing</span>
+              <span class="grey_divider">|</span> &nbsp
+              <span class="greyed"> Financial Management</span>
+            </span>
+          </div>
+          <div class="vertical_divider"></div>
+          <div class="norms_div">
+            <span class="norm_span active_norm">Willingness </span>
+            <span class="norm_span grey_norm">Readines </span>
+            <span class="norm_span grey_norm">Norms </span>
+          </div>
+        </div>
+        <div class="assessments_instruction_div">
+          <h1 class="assessments_instruction_title">Assessments Instruction</h1>
+          <p class="assessments_instruction_description">
+            Now you will be shown aseries of statements about how you think your friends and other
+            people view your attitudes or behaviours for each statement, please don’t thin it
+            through respond based on your immediate reaction to the statement
+          </p>
+          <img src="../../images/assessments/Cancel.svg" class="cancel_circle" />
+        </div>
+        <!-- Donot remove this commented code -->
+        <!-- <div class="nodata_Image_Div">
+        <div style="display: flex;flex-direction: column;width: 40%;align-items: center;justify-content: center;">
+
+          <img src="../../images/assessments/nodata.svg" />
+          <h1 style="color: #419EAC;margin-top: -50px">
+            No Assessments Available
+          </h1>
+          <p style="color:#919B9B;font-size: medium;text-align: center;">
+            Maybe you have completed all assessments or your agent has not yet <br />assigned any assessments to you.
+            Please
+            check back later or contact your<br /> agent for more information.
+          </p>
+        </div>
+      </div> -->
+
+        <div class="willingness_div">
+          <div class="willingness_div_1">
+            <div class="willingness_number_circle">01</div>
+            <i>
+              <span style="font-size: small; color: #d9d9d9"> out of 12 Question </span>
+            </i>
+          </div>
+          <div class="willingness_div_2">
+            <div
+              class="progress"
+              role="progressbar"
+              aria-label="Basic example"
+              aria-valuenow="25"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              <div class="progress-bar" style="width: 10%; background-color: #419eac"></div>
+            </div>
+          </div>
+          <div class="willingness_div_3">
+            <span class="make_changes">
+              It seems like everyone I know thinks I need to make some changes.
+            </span>
+          </div>
+          <div class="willingness_div_4">
+            <button class="agree_btn">
+              <input type="checkbox" class="agree_btn_checkbox" />
+              Agree
+            </button>
+            <button class="disagree_btn">
+              <input type="checkbox" class="agree_btn_checkbox" />
+              Disagree
+            </button>
+          </div>
+        </div>
+
+        <!--                      Welcome Modal                      -->
+        <!-- <div class="modal custom_modal welcome_modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+              <button type="button" class="btn-close modal_close" data-bs-dismiss="modal" aria-label="Close">
+                x
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_text">
+                We at integrated Diagnostic system Inc. have been asked to administer to you a series of
+                surveys designed to collect information form your regarding your beliefs attitudes and
+                opinions on several Different topics this information is being collected for the purpose
+                assisting you in your self improvement efforts the complete process should not take more
+                than 15-20 Minutes. your answer to organisation who referred you to us.
+              </div>
+              <button class="modal_btn modal_primary_btn">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      </div>
+       <!-- modal contact support -->
+    <div
+    class="modal custom_modal contact_modal"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Contact Support
+          </h5>
+          <button
+            type="button"
+            class="btn-close modal_close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            x
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal_text mb-4">
+            Lorem Ipsum Ispum Lorem asimna
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label">Email</label>
+            <input
+              type="text"
+              class="form-control input_field"
+              placeholder="Enter your email"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label">Username</label>
+            <input
+              type="text"
+              class="form-control input_field"
+              placeholder="Enter your username"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label"
+              >Your Message</label
+            >
+            <textarea
+              class="form-control input_field"
+              placeholder="Type something"
+              id="staticEmail2"
+              rows="3"
+            ></textarea>
+          </div>
+          <button disabled class="modal_btn modal_primary_btn mt-4">
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+      <!-- menuuu -->
+      <div class="agency_list_mblMenu" id="show">
+
+        <div class="logo_menu">
+          <div>
+            <img src="../../images/LandingImages/Logo-2.svg" alt="" />
+          </div>
+          <div  id="menu-toggle" onclick="toggleMenu()">
+            <img src="../../images/LandingImages/Cross.svg" alt="" />
+          </div>
+        </div>
+      
+        <div class="mob_navlinks_div">
+          <div class="WrapIconNname">
+            <div class="left_side_assessments_options left_side_agent_options mb-4">
+              <div class="agent_logo">
+                <img src="../../images/agent/logo.svg" alt="logo" />
+              </div>
+              <div class="agent_username">Robi Agent</div>
+              <span class="agent_view">Agent View</span>
+            </div>
+          </div>
+          <!-- <div class="WrapIconNname">
+            <div class="menuIcon_Div">
+              <img src="../../images/Vectoricognii.svg" alt="img">
+            </div>
+          <div class="inner_mob_nav_div">
+            <a class="navlink_mob" >Agencies</a>
+          </div>
+          </div>
+      
+          <div class="WrapIconNname">
+            <div class="menuIcon_Div">
+              <img src="../../images/Vectorreload.svg" alt="img">
+            </div>
+          <div class="inner_mob_nav_div">
+            <a class="navlink_mob" >Content</a>
+          </div>
+        </div>
+      
+        </div> -->
+       
+        <div class="contactSuprtBtnDiv" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button class="cntctSupportBtn">Contact support</button>
+        </div>
+        <div id="tooltipMLx" >
+          <span >
+            <div   data-bs-toggle="modal" data-bs-target="#editProfile">
+                <span>
+                    <img src="../../images/assessments/edit_profile.svg" />
+                </span>
+                <span class="ml-4"> Edit Profile</span>
+            </div>
+            <div class="tooltip_itemx" data-bs-toggle="modal" data-bs-target="#logout">
+                <span class="pr-4">
+                    <img src="../../images/assessments/logout.svg" />
+                </span>
+                <span> Logout</span>
+            </div>
+        </span>
+    </div>
+        <div class="nameNactionsDiv">
+        <div class="menu_names_wrapperDiv">
+         <div> <p class="menu_name_lsitx">Younas Akram</p></div>
+          <div><p class="menu_name_2x"> Admin122</p></div>
+        </div>
+      
+        <div onclick="toggleDots()" onblur="toggleDots()" id="dotsBTN">
+      <img src="../../images/iconDotsRow.svg" alt="dots">
+        </div>
+        </div>
+      
+      
+      </div>
+    </div>
+
+    <!-- /* Thank you modal */ -->
+    <!-- <div
+      class="modal custom_modal thanks_modal"
+      id="thankYou_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal-title" id="exampleModalLabel">Thank You</div>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal_text">
+              Lorem Ipsum IPsum Lorem Falna ipsum Lorem merab usnay ospumheiman
+              lorem henal loremLorem Ipsum IPsum Lorem Falna ipsum Lorem merab
+              usnay
+            </div>
+            <button class="modal_btn modal_primary_btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div
+      class="modal custom_modal thanks_modal"
+      id="thankYou_modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="modal_title_div">
+              <div class="modal-title end_impersonation" id="exampleModalLabel">
+                End Impersonation
+              </div>
+              <div class="modal-title" id="exampleModalLabel">Client23</div>
+            </div>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal_text end_impersonation_text">
+              This will end your impersonation and return you to your original login account
+            </div>
+            <button class="modal_btn orange">End Impersonation</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

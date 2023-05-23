@@ -1,0 +1,234 @@
+.report {
+  font-family: 'Poppins';
+}
+
+.report_breadcrumb {
+  display: flex;
+  width: 100%;
+  justify-content: space-between !important;
+  align-items: center;
+  padding-left: 15px !important;
+  padding-right: 40px;
+}
+.client_title {
+  color: var(--text-grey-2);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.list_title {
+  color: var(--text-grey-2);
+  padding-left: 20px;
+}
+.report_name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 20px;
+}
+.report_export_btn {
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid var(--bg-primary);
+  color: var(--text-primary);
+  padding: 8px 20px !important;
+  font-size: 14px;
+  font-weight: 500;
+}
+.report_export_btn:hover {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  transition: all 0.5 ease;
+}
+.report_export_btn:hover img {
+  filter: brightness(0) invert(1);
+}
+.report_export_btn img {
+  padding-left: 7px;
+  color: #fff;
+}
+.mblViewBtnDiv{
+  display: none;
+}
+.adminClntImpMenuu{
+  display: none;
+}
+.agency_list_mblMenu{
+  display: none;
+}
+#tooltipMLx{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .client_title{
+    margin-left: -18% !important;
+  }
+  #tooltipMLx{
+    display: none;
+    background-color: white !important;
+    width: 180px;
+    margin: auto;
+    position: absolute;
+    top: 78%;
+    border-radius: 18px;
+    padding: 4%;
+    gap: 1rem;
+    padding-left: 6%;
+    left: 40%;
+  }
+  .tooltip_itemx{
+    padding-top: 10px;
+  }
+
+  .report_export_btn{
+    display: none;
+  }
+  .mblViewBtnDiv{
+    width: 45px;
+    display: block;
+  }
+  .client_back_btn{
+    display: none;
+  }
+  
+ #breadCrumbDivCustom{
+  justify-content: flex-start !important;
+ }
+
+
+ .adminClntImpMenuu{
+  display: block;
+}
+.adminClntImpMenuu{
+  display: block;
+  width: 50px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+ .agency_list_mblMenu{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../images/LandingImages/BG.svg");
+  display: none;
+ }
+ .logo_menu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.mob_navlinks_div{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.navlink_mob {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.mob_navlinks_div{
+  padding-top: 50px;
+  /* padding-bottom: 40%; */
+  /* padding-right: 10%;
+  padding-left: 10%; */
+  width: 100%;
+}
+.WrapIconNname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  /* padding: 0% 10% 0% 10%; */
+  margin: auto;
+}
+.WrapIconNname:hover {
+  background-color: rgba(138, 192, 200, 1);
+}
+.menuIcon_Div{
+  width: 25px;
+  margin-right: 12px;
+}
+
+.menuIcon_Div img{
+  width: 100%;
+}
+.menu_name_lsitx{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color:#FFFFFF;
+}
+.menu_name_2x{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color:#FFFFFF; 
+}
+.inner_mob_nav_div{
+  padding: 3.5% 0% 3.5% 0%;
+  width: 100%;
+}
+.contactSuprtBtnDiv{
+  width: 80%;
+  margin: auto !important;
+}
+.cntctSupportBtn{
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color:#419EAC;
+  background-color:rgba(255, 255, 255, 1) ;
+  border-radius: 30px;
+  border: none;
+  margin-top: 100px;
+}
+.nameNactionsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  margin: auto;
+  padding-top: 10%;
+}
+  .left_side_assessments{
+    display: none;
+  }
+  .list_title {
+    padding-left: 3px !important;
+    font-size: 14px;
+  }
+  .report_name {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .report_export_btn {
+    border-radius: 40px;
+    padding: 6px 8px !important;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 9px;
+  }
+  
+}

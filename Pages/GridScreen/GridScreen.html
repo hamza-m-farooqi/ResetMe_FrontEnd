@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="GridScreen.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="../../CSS/common.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Smooch Sans" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+     function toggleNewOpenDiv() {
+    var newOpenDiv = document.getElementById('mobileActionOptions');
+    console.log("opendiv",newOpenDiv)
+    if (newOpenDiv.style.display === 'none') {
+      newOpenDiv.style.display = 'flex';
+    } else {
+      newOpenDiv.style.display = 'none';
+    }
+  }
+    </script>
+    <title>Listing</title>
+  </head>
+
+  <body>
+    <div class="grid_content">
+      <table class="table table-responsive table-striped table-hover custom_table">
+        <thead style="width: 100%">
+          <tr style="width: 100%">
+            <th class="tableHeading inner_padding" scope="col">ID</th>
+            <th class="tableHeading" scope="col">Login Name</th>
+            <th class="tableHeading" scope="col">Display Name</th>
+            <th class="tableHeading" scope="col">Role</th>
+            <th style="width: 30%" class="tableHeading" scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="odd_row">
+            <th class="align-middle inner_padding id_style" scope="row">01</th>
+            <td class="align-middle id_style">IdsClient42</td>
+            <td class="align-middle id_style">Christopher</td>
+            <td class="align-middle id_style bold">Client</td>
+            <td>
+              <div class="all_buttons">
+                <button class="report_div">
+                  <img src="../../images/agent/view report.svg" alt="" />
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#referralModal" class="referral-btn">
+                  Refferal
+                </button>
+                <button class="impersonate_btn">
+                  <img src="../../images/agent/Group-2.svg" alt="" />
+                  Impersonate
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#editClient" class="edit_btn">
+                  <img src="../../images/agent/Icon-7.svg" alt="" />
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#deleteClient" class="delete_btn">
+                  <img src="../../images/agent/delete-2.svg" alt="" />
+                </button>
+                
+              </div>
+              <div class="mobileActionButton" onclick="toggleNewOpenDiv()">
+                <div data-bs-toggle="xx" data-bs-target="#xx" class="mbl_ActionBtn">
+                  <img src="../../images/agent/ActionDots.svg" alt="dots" />
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <th class="align-middle inner_padding id_style" scope="row">02</th>
+            <td class="align-middle id_style">IdsClient42</td>
+            <td class="align-middle id_style">Christopher</td>
+            <td class="align-middle id_style bold">Client</td>
+            <td>
+              <div class="all_buttons">
+                <button data-bs-toggle="modal" data-bs-target="#referralModal" class="referral-btn">
+                  Refferal
+                </button>
+                <button class="impersonate_btn">
+                  <img src="../../images/agent/Group-2.svg" alt="" />
+                  Impersonate
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#editClient" class="edit_btn">
+                  <img src="../../images/agent/Icon-7.svg" alt="" />
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#deleteClient" class="delete_btn">
+                  <img src="../../images/agent/delete-2.svg" alt="" />
+                </button>
+              </div>
+              <div class="mobileActionButton" onclick="toggleNewOpenDiv()">
+                <img data-bs-toggle="xx" data-bs-target="#xx" class="mbl_ActionBtn">
+                  <img src="../../images/agent/ActionDots.svg" alt="dots" />
+                </img>
+              </div>
+            </td>
+          </tr>
+          <tr class="odd_row">
+            <th class="align-middle inner_padding id_style" scope="row">03</th>
+            <td class="align-middle id_style">IdsClient42</td>
+            <td class="align-middle id_style">Christopher</td>
+            <td class="align-middle id_style bold">Client</td>
+            <td>
+              <div class="all_buttons">
+                <button data-bs-toggle="modal" data-bs-target="#referralModal" class="referral-btn">
+                  Refferal
+                </button>
+                <button class="impersonate_btn">
+                  <img src="../../images/agent/Group-2.svg" alt="" />
+                  Impersonate
+                </button>
+                <button class="edit_btn">
+                  <img
+                    data-bs-toggle="modal"
+                    data-bs-target="#editClient"
+                    src="../../images/agent/Icon-7.svg"
+                    alt=""
+                  />
+                </button>
+                <button data-bs-toggle="modal" data-bs-target="#infoModal" class="delete_btn">
+                  <img src="../../images/agent/delete-2.svg" alt="" />
+                </button>
+              </div>
+              <div class="mobileActionButton" onclick="toggleNewOpenDiv()">
+                <img data-bs-toggle="xx" data-bs-target="#xx" class="mbl_ActionBtn">
+                  <img src="../../images/agent/ActionDots.svg" alt="dots" />
+                </img>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- EDIT PROFILE Modal -->
+    <div
+      class="modal custom_modal profile_modal"
+      id="editClient"
+      tabindex="-1"
+      aria-labelledby="editClient"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Client</h5>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal_text mb-4">Lorem Ipsum Ispum Lorem asimna</div>
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Name</label>
+              <input
+                type="text"
+                class="form-control input_field"
+                placeholder="Enter your name"
+                id="staticEmail2"
+              />
+            </div>
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Username</label>
+              <input
+                type="text"
+                class="form-control input_field"
+                placeholder="Enter your username"
+                id="staticEmail2"
+              />
+            </div>
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Email</label>
+              <input
+                type="text"
+                class="form-control input_field"
+                placeholder="Enter your email"
+                id="staticEmail2"
+              />
+            </div>
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Password</label>
+              <button
+                class="reset_button"
+                data-bs-toggle="modal"
+                data-bs-target="#resetPasswordModal"
+              >
+                <div>Reset Now</div>
+                <img src="../../images/assessments/arrow_right.svg" alt="Go" />
+              </button>
+            </div>
+            <button class="modal_btn modal_primary_btn mt-4">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESET PASSWORD PROFILE -->
+    <div
+      class="modal custom_modal reset_password_modal"
+      id="resetPasswordModal"
+      tabindex="3"
+      aria-labelledby="resetPasswordModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="modal_text reset_description">
+              Password must be between 8 and 32 characters, with one each of: a capital letter, a
+              lowercase letter, a number, a special character
+            </div>
+
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Password</label>
+              <div class="password_field">
+                <input
+                  type="password"
+                  class="form-control input_field"
+                  placeholder="Enter password here"
+                  id="staticEmail2"
+                />
+                <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+              </div>
+            </div>
+            <div class="col-12 text-start mb-3">
+              <label for="staticEmail2" class="input_label">Verify Password</label>
+              <div class="password_field">
+                <input
+                  type="password"
+                  class="form-control input_field"
+                  placeholder="Verify password"
+                  id="staticEmail2"
+                />
+                <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+              </div>
+            </div>
+
+            <button disabled class="modal_btn modal_primary_btn mt-4">submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--               Delete Client Modal            -->
+    <div
+      class="modal delete_client_modal custom_modal"
+      id="deleteClient"
+      tabindex="2"
+      aria-labelledby="logout"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-sm modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="../../images/agent/delete.svg" />
+            <div class="delete_confirm text_red">Are you sure want to Delete</div>
+            <div class="delete_username">Username</div>
+            <div class="delete_text">This will delete client Profile</div>
+
+            <div class="delete_footer">
+              <button class="delete_btn">Delete</button>
+              <button class="cancel_btn">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--               Login Info Modal            -->
+    <div
+      class="modal info_modal custom_modal"
+      id="infoModal"
+      tabindex="2"
+      aria-labelledby="logout"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-md modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Login Info</h5>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="info_text mb-4">Please provide the login info to the agency represents</div>
+            <div id="copy_clipboard" class="username_field">
+              <div class="field_content" id="field_content">
+                <span>Username &nbsp;</span>
+                <input id="name_field" value="Younas1232" disabled class="copy_field" />
+              </div>
+              <img onclick="myFunction('name')" src="../../images/agent/copy.svg" />
+            </div>
+            <div class="username_field">
+              <div class="field_content" id="field_content">
+                <span>Password &nbsp;</span>
+                <input id="password_field" value="6hTXs3Fb3B6R" disabled class="copy_field" />
+              </div>
+              <img onclick="myFunction('password')" src="../../images/agent/copy.svg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--        Referral Modal          -->
+    <div
+      class="modal custom_modal referral_modal"
+      id="referralModal"
+      tabindex="-1"
+      aria-labelledby="referralModal"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Select Package for Referral</h5>
+            <button
+              type="button"
+              class="btn-close modal_close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              x
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="client_name mb-4">IdsClient42</div>
+            <div class="modal_heading">Packages</div>
+            <div class="packages_container">
+              <div class="package package_active">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Readiness to Change
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Self Satisfaction </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Financial Management
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault"> Stress Management </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Conflict Resolution
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Communication Skills
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Maintaining Employment
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Obtaining Employment
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Physical Wellbeing
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Voluntary Non-Adherence
+                  </label>
+                </div>
+              </div>
+              <div class="package">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Involuntary Non-Adherence
+                  </label>
+                </div>
+              </div>
+            </div>
+            <button disabled class="modal_btn modal_primary_btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Action Button menuu -->
+<div id="mobileActionOptions">
+  <div class="mblBtnsWrapperSx">
+      <button class="report_divmbl">
+        <img src="../../images/agent/view report.svg" alt="" />
+      </button>
+      <button data-bs-toggle="modal" data-bs-target="#referralModal" class="referral-btnmbl">
+        Refferal
+      </button>
+      <button data-bs-toggle="modal" data-bs-target="#editClient" class="edit_btnmbl">
+        <img src="../../images/agent/Icon-7.svg" alt="" />
+      </button>
+      <button data-bs-toggle="modal" data-bs-target="#deleteClient" class="delete_btnmbl">
+        <img src="../../images/agent/delete-2.svg" alt="" />
+      </button>
+      <button class="impersonate_btnmbl">
+        <img src="../../images/agent/Group-2.svg" alt="" />
+      </button>
+  </div>
+
+</div>
+  </body>
+</html>

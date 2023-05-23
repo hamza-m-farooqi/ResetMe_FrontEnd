@@ -1,0 +1,237 @@
+.impersonate_header {
+  height: 10%;
+  width: 100%;
+  background-color: aqua;
+}
+.agency_list_mblMenu{
+  display: none;
+}
+.searchIconMbl{
+  display: none;
+}
+.downloadBtnMbl{
+  display: none;
+}
+#tooltipMLx{
+  display: none;
+}
+#menuIconmbl{
+  display: none !important;
+}
+.divSearchMbl{
+  display: none !important;
+}
+.footer_rightx{
+  display: none !important;
+}
+@media only screen and (max-width: 767px) {
+  .footer_rightx{
+    display: block !important;
+  }
+  .footer_right{
+    display: none !important;
+  }
+  #titlsAgsx{
+    margin-left: -38% !important;
+  }
+  .search_inputx {
+    padding: 17px 50px 17px 30px;
+    background: #f6fafb;
+    border-radius: 100000px;
+    outline: none;
+    border: none;
+    width: 80% !important;
+  }
+  .search_inputx::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-grey-2);
+  }
+  
+  .search_imgx {
+    position: absolute;
+    right: 63px !important;
+    top: 8px !important;
+  }
+  .divSearchMbl {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+    margin-top: 4% !important;
+    margin-bottom: 4% !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+  #menuIconmbl{
+    display: block !important;
+  }
+  #tooltipMLx{
+    display: none;
+    background-color: white !important;
+    width: 180px;
+    margin: auto;
+    position: absolute;
+    top: 78%;
+    border-radius: 18px;
+    padding: 4%;
+    gap: 1rem;
+    padding-left: 6%;
+    left: 40%;
+    color: black;
+    font-size: 14px !important;
+    font-weight: normal;
+  }
+
+  .tooltip_itemx{
+    padding-top: 10px;
+  }
+
+ 
+  .search{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .downloadBtnMbl{
+    display: block;
+    width: 30px;
+   
+  }
+  .search_input_div{
+    display: none;
+  }
+
+  /* .searchIconMbl{
+    display: block;
+  }
+  .searchIconMbl img{
+    margin-top: 12px;
+  } */
+  .agency_list_mblMenu{
+    display: block;
+  }
+   .left_side_assessments{
+    display: none;
+   }
+   .search_input_div{
+    max-width: 50vw;
+   }
+   .search_input_div .search_input{
+    width: 100%;
+   }
+   .agency_list_mblMenu{
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+    background-image: url("../../images/LandingImages/BG.svg");
+    display: none;
+   }
+  .mob_navlinks_div{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+  .navlink_mob {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+  .logo_menu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.contactSuprtBtnDiv{
+  width: 80%;
+  margin: auto;
+}
+.mob_navlinks_div{
+  padding-top: 50px;
+  padding-bottom: 40%;
+  /* padding-right: 10%;
+  padding-left: 10%; */
+  width: 100%;
+}
+.inner_mob_nav_div{
+  padding: 3.5% 0% 3.5% 0%;
+  width: 100%;
+}
+  .cntctSupportBtn{
+    padding: 15px 30px;
+    width: 100%;
+    margin: auto;
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 600;
+    color:#419EAC;
+    background-color:rgba(255, 255, 255, 1) ;
+    border-radius: 30px;
+    border: none;
+    margin-top: 100px;
+  }
+  .nameNactionsDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+    margin: auto;
+    padding-top: 10%;
+  }
+  .menu_names_wrapperDiv{
+    display: flex;
+    flex-direction: column;
+  }
+  .WrapIconNname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 52%;
+    margin: auto;
+    /* padding: 0% 10% 0% 10%; */
+  }
+  .WrapIconNname:hover {
+    background-color: rgba(138, 192, 200, 1);
+  }
+  .menuIcon_Div{
+    width: 25px;
+    margin-right: 12px;
+  }
+  
+  .menuIcon_Div img{
+    width: 100%;
+  }
+  
+  .menu_name_lsitx{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color:#FFFFFF;
+  }
+  .menu_name_2x{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color:#FFFFFF; 
+  }
+   
+}

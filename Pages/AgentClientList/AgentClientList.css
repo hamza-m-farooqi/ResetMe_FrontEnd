@@ -1,0 +1,243 @@
+.login_info_username {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  gap: 10px;
+  height: 52px;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+  margin-bottom: 10px;
+}
+.blue_username {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #419eac;
+}
+.name_username {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #454238;
+}
+.adminClntImpMenuu{
+  display: none;
+}
+.agency_list_mblMenu{
+  display: none;
+}
+#tooltipMLx{
+  display: none;
+}
+.footer_rightx{
+  display: none !important;
+}
+.divSearchMbl{
+  display: none !important;
+}
+#mblDownloadbtn{
+  display: none !important;
+}
+@media only screen and (max-width: 767px) {
+  #mblDownloadbtn{
+    display: block !important;
+    margin-right: 3% !important;
+  }
+  .search_inputx {
+    padding: 17px 50px 17px 30px;
+    background: #f6fafb;
+    border-radius: 100000px;
+    outline: none;
+    border: none;
+    width: 80% !important;
+  }
+  .search_inputx::placeholder {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-grey-2);
+  }
+  
+  .search_imgx {
+    position: absolute;
+    right: 63px !important;
+    top: 8px !important;
+  }
+  .divSearchMbl {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: row !important;
+    margin-top: 4% !important;
+    margin-bottom: 4% !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+  .footer_rightx{
+    display: block !important;
+    margin-right: 2% !important;
+  }
+  .footer_right{
+    display: none !important;
+  }
+  .search_input_div{
+    display: none !important;
+  }
+  #agtSx{
+    margin-left: -22% !important;
+  }
+  #tooltipMLx{
+    display: none;
+    background-color: white !important;
+    width: 180px;
+    margin: auto;
+    position: absolute;
+    top: 78%;
+    border-radius: 18px;
+    padding: 4%;
+    gap: 1rem;
+    padding-left: 6%;
+    left: 40%;
+  }
+  .tooltip_itemx{
+    padding-top: 10px;
+  }
+ 
+ #breadCrumbDivCustom{
+  justify-content: flex-start !important;
+ }
+
+
+ .adminClntImpMenuu{
+  display: block;
+}
+.adminClntImpMenuu{
+  display: block;
+  width: 50px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+ .agency_list_mblMenu{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  background-image: url("../../images/LandingImages/BG.svg");
+  display: none;
+ }
+ .logo_menu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.mob_navlinks_div{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.navlink_mob {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.mob_navlinks_div{
+  padding-top: 50px;
+  /* padding-bottom: 40%; */
+  /* padding-right: 10%;
+  padding-left: 10%; */
+  width: 100%;
+}
+.WrapIconNname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+  /* padding: 0% 10% 0% 10%; */
+}
+.WrapIconNname:hover {
+  background-color: rgba(138, 192, 200, 1);
+}
+.menuIcon_Div{
+  width: 25px;
+  margin-right: 12px;
+}
+
+.menuIcon_Div img{
+  width: 100%;
+}
+.menu_name_lsitx{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color:#FFFFFF;
+}
+.menu_name_2x{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color:#FFFFFF; 
+}
+.inner_mob_nav_div{
+  padding: 3.5% 0% 3.5% 0%;
+  width: 100%;
+}
+.contactSuprtBtnDiv{
+  width: 80%;
+  margin: auto;
+}
+.cntctSupportBtn{
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color:#419EAC;
+  background-color:rgba(255, 255, 255, 1) ;
+  border-radius: 30px;
+  border: none;
+  margin-top: 100px;
+}
+.nameNactionsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  margin: auto;
+  padding-top: 10%;
+}
+  .left_side_assessments{
+    display: none !important;
+  }
+  .search_input_div{
+    width: 35vw !important;
+  }
+  .search_input{
+    width: 100% !important;
+  }
+  .export_client_btn{
+    padding: 2px !important;
+  }
+  .agent_title{
+    font-size: 14px !important;
+  }
+}

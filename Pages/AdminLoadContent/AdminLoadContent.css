@@ -1,0 +1,332 @@
+.incognito_agent {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+.incognito_agent_parent_div {
+  width: 100%;
+  padding: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #919b9b;
+  cursor: pointer;
+}
+.selected {
+  color: #ffffff;
+  background-color: #419eac;
+  border-left: 5px solid rgba(255, 255, 255, 0.5);
+}
+.selected img {
+  filter: brightness(0) invert(1);
+}
+.mblDownloadBtn{
+  display: none;
+}
+
+.upload_file_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 32px;
+  width: 100%;
+  height: 181px;
+  border: 3px dashed #d9d9d9;
+  border-radius: 12px;
+  position: relative;
+  z-index: 999;
+}
+.selected_input {
+  border: 3px dashed #419eac;
+}
+.uploaded_input {
+  border: 3px dashed #000000;
+}
+.upload_file_input:focus {
+  outline: none !important;
+}
+input[type='file'] {
+  color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+.upload_file_input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.attatchment_wrapper {
+  width: 32%;
+}
+.attatchment_div_parent {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.attatchment_div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.upload_csv {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #454238;
+  margin: 0;
+  white-space: nowrap;
+}
+.all_attatchments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+.attatchment_heading {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #919b9b;
+  margin-bottom: 10px;
+}
+.active_attatchment_heading {
+  color: #419eac;
+}
+.load_check .form-check,
+.load_check .form-check-input,
+.load_check .form-check-label {
+  cursor: pointer !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #419eac;
+  margin: 5px 0 0 5px;
+}
+
+.load_check .form-check-input:checked {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+}
+
+.load_check input[type='checkbox']:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.load_check input[type='checkbox'] {
+  width: 20px;
+  height: 20px;
+}
+.load_check {
+  padding-left: 2.2rem !important;
+  margin-top: 5px;
+}
+.gap_btn {
+  gap: 10px;
+}
+.gap_btn:disabled img {
+  filter: brightness(100) invert(40%);
+}
+
+.attatchment_heading_uploaded {
+  color: #000000;
+}
+.adminClntImpMenuu{
+  display: none;
+}
+.agency_list_mblMenu{
+  display: none;
+}
+#tooltipMLx{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  #uploadBtnWrapDiv{
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  #spxWrapper{
+    height: 86% !important;
+  }
+  #title_agsx{
+    margin-left: -18% !important;
+  }
+  
+  #tooltipMLx{
+    display: none;
+    background-color: white !important;
+    width: 180px;
+    margin: auto;
+    position: absolute;
+    top: 78%;
+    border-radius: 18px;
+    padding: 4%;
+    gap: 1rem;
+    padding-left: 6%;
+    left: 40%;
+  }
+  .tooltip_itemx{
+    padding-top: 10px;
+  }
+ #breadCrumbDivCustom{
+  justify-content: space-between !important;
+ }
+ .adminClntImpMenuu{
+  display: block;
+}
+.adminClntImpMenuu{
+  display: block;
+  width: 50px;
+  padding-left: 8px;
+  padding-top: 4px;
+}
+ .agency_list_mblMenu{
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: blueviolet;
+  background-image: url("../../images/LandingImages/BG.svg");
+  display: none;
+ }
+ .logo_menu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.mob_navlinks_div{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.navlink_mob {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  color: #ffffff;
+  padding: 8px;
+  text-decoration: none;
+}
+.mob_navlinks_div{
+  padding-top: 50px;
+  padding-bottom: 40%;
+  /* padding-right: 10%;
+  padding-left: 10%; */
+  width: 100%;
+}
+.WrapIconNname{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 0% 10% 0% 10%;
+}
+.WrapIconNname:hover {
+  background-color: rgba(138, 192, 200, 1);
+}
+.menuIcon_Div{
+  width: 25px;
+  margin-right: 12px;
+}
+
+.menuIcon_Div img{
+  width: 100%;
+}
+.menu_name_lsitx{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color:#FFFFFF;
+}
+.menu_name_2x{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color:#FFFFFF; 
+}
+.inner_mob_nav_div{
+  padding: 3.5% 0% 3.5% 0%;
+  width: 100%;
+}
+.contactSuprtBtnDiv{
+  width: 80%;
+  margin: auto;
+}
+.cntctSupportBtn{
+  padding: 15px 30px;
+  width: 100%;
+  margin: auto;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color:#419EAC;
+  background-color:rgba(255, 255, 255, 1) ;
+  border-radius: 30px;
+  border: none;
+  margin-top: 100px;
+}
+.nameNactionsDiv{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 90%;
+  margin: auto;
+  padding-top: 10%;
+}
+  .left_side_assessments{
+    display: none;
+  }
+  .right_side_assessments{
+    width: 100%;
+  }
+  .all_attatchments{
+    flex-direction: column;
+    width: 100%;
+  }
+ .right_side_assessments .agent_container{
+    width: 100%;
+  }
+  .agent_wrapper{
+    width: 100%;
+  }
+  .attatchment_wrapper {
+    width: 90%;
+    margin: auto !important;
+    margin-top: 40px !important;
+  }
+  .upload_csv {
+    font-size: 16px;
+  }
+  .export_client_btn{
+    display: none;
+  }
+  .mblDownloadBtn{
+    display: block;
+    width: 32px;
+    margin-right: 2%;
+  }
+  .mblDownloadBtn img {
+    width: 100%;
+  }
+}

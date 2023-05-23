@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Login.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Smooch Sans" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="login">
+      <!--               LEFT SIDE                 -->
+      <div class="login_left">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="slide">
+                <img src="../../images/login/slider1.svg" alt="slide 1" class="slide_img" />
+                <div class="slide_heading">Welcome to ResetMe</div>
+                <div class="slide_details">
+                  Reset is an AI-driven platform that assists in managing individual change for
+                  better psychological, social, and behavioral wellbeing, using a two-step process
+                  of core and targeted assessments.
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slide">
+                <img src="../../images/login/slider2.svg" alt="slide 1" class="slide_img" />
+                <div class="slide_heading">Mindset Profiles</div>
+                <div class="slide_details">
+                  Understand your unique mindset and uncover the root causes of problem areas with
+                  Mindset Profile. Unlock your potential for beneficial change today.
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="slide">
+                <img src="../../images/login/slider3.svg" alt="slide 1" class="slide_img" />
+                <div class="slide_heading">Longitudinal Tracking</div>
+                <div class="slide_details">
+                  Stay motivated and on top of your progress with our longitudinal tracking tool,
+                  designed to help you see your growth and achievements over time.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--               RIGHT SIDE                -->
+      <div class="login_right">
+        <form class="login_content">
+          <div>
+            <img class="login_logo" src="../../images/login/logo.svg" alt="logo" />
+          </div>
+          <div class="login_heading">Hello Again</div>
+          <div class="login_description">Please enter your assigned credentials.</div>
+          <div class="col-12 text-start">
+            <label for="staticEmail2" class="input_label">Email</label>
+            <input
+              type="text"
+              class="form-control input_field"
+              placeholder="Enter your Email"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-12 text-start mt-3">
+            <label for="inputPassword2" class="input_label">Password</label>
+            <div class="password_field">
+              <input
+                type="password"
+                class="form-control input_field"
+                id="inputPassword2"
+                placeholder="Enter your Password"
+              />
+              <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+            </div>
+            <a class="forgot_link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >Forgot Password ?</a
+            >
+          </div>
+          <button class="submit_btn" type="submit">Sign in</button>
+        </form>
+      </div>
+
+      <!--              Forgot Password Modal              -->
+      <div
+        class="modal fade custom_modal forgot_modal"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Forgot Password</h5>
+              <button
+                type="button"
+                class="btn-close modal_close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                x
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_text">
+                We will send a password reset link to your email address. Please check your junk
+                folder for messages from <span class="modal_email">no-reply@whatisreset.com</span>
+              </div>
+              <div class="col-12 text-start mb-4">
+                <label for="staticEmail2" class="input_label">Email Address</label>
+                <input
+                  type="text"
+                  class="form-control input_field"
+                  placeholder="demo@gmail.com"
+                  id="staticEmail2"
+                />
+              </div>
+              <button disabled class="modal_btn modal_primary_btn">Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--              Forgot Password Modal End              -->
+    </main>
+  </body>
+</html>
+
+<!-- /* Welcome Modal */ -->
+<!-- <div
+  class="modal fade custom_modal welcome_modal"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Welcome</h5>
+        <button
+          type="button"
+          class="btn-close modal_close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          x
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_text">
+          We at integrated Diagnostic system Inc. have been asked to administer to you a series of
+          surveys designed to collect information form your regarding your beliefs attitudes and
+          opinions on several Different topics this information is being collected for the purpose
+          assisting you in your self improvement efforts the complete process should not take more
+          than 15-20 Minutes. your answer to organisation who referred you to us.
+        </div>
+        <button class="modal_btn modal_primary_btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- /* Thank you modal */ -->
+<!-- 
+<div
+  class="modal fade custom_modal thanks_modal"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="exampleModalLabel">Thank You</div>
+        <button
+          type="button"
+          class="btn-close modal_close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          x
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_text">
+          Lorem Ipsum IPsum Lorem Falna ipsum Lorem merab usnay ospumheiman lorem henal loremLorem
+          Ipsum IPsum Lorem Falna ipsum Lorem merab usnay
+        </div>
+        <button class="modal_btn modal_primary_btn">Continue</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- /* Edit Profile Modal */ -->
+<!-- 
+<div
+  class="modal fade custom_modal profile_modal"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+        <button
+          type="button"
+          class="btn-close modal_close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        >
+          x
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="modal_text mb-4">Lorem Ipsum Ispum Lorem asimna</div>
+        <div class="col-12 text-start mb-3">
+          <label for="staticEmail2" class="input_label">Name</label>
+          <input
+            type="text"
+            class="form-control input_field"
+            placeholder="Enter name here"
+            id="staticEmail2"
+          />
+        </div>
+        <div class="col-12 text-start mb-3">
+          <label for="staticEmail2" class="input_label">Username</label>
+          <input
+            type="text"
+            class="form-control input_field"
+            placeholder="Enter username here"
+            id="staticEmail2"
+          />
+        </div>
+        <div class="col-12 text-start mb-3">
+          <label for="staticEmail2" class="input_label">Email</label>
+          <input
+            type="text"
+            class="form-control input_field"
+            placeholder="Enter email here"
+            id="staticEmail2"
+          />
+        </div>
+        <div class="col-12 text-start mb-3">
+          <label for="staticEmail2" class="input_label">Password</label>
+          <input
+            type="password"
+            class="form-control input_field"
+            placeholder="Enter password here"
+            id="staticEmail2"
+          />
+        </div>
+        <button class="modal_btn modal_primary_btn mt-4">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->

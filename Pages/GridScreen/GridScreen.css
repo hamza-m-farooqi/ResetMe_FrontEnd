@@ -1,0 +1,367 @@
+/*      Agent Conten & Table        */
+.grid_content {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+}
+.custom_table {
+  border-radius: 20px;
+}
+.custom_table.table-hover > tbody > tr:hover {
+  background-color: var(--bg-green-light) !important;
+  border-color: transparent !important;
+}
+.tableHeading {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-grey-2);
+}
+.all_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 7px;
+  margin-right: 20px;
+}
+.report_div {
+  border: 1.48px solid var(--text-orange);
+  border-radius: 100px;
+  width: 37px;
+  height: 37px;
+  background-color: transparent;
+}
+.referral-btn {
+  border: 1.48px solid var(--bg-primary);
+  color: var(--bg-primary);
+  border-radius: 100px;
+  padding: 0px 15px;
+  gap: 10px;
+  width: 77px;
+  height: 37px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+.referral-btnmbl{
+  display: none;
+}
+.impersonate_btn {
+  width: 136.13px;
+  height: 37px;
+  border: 1.48px solid var(--text-orange);
+  border-radius: 100px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: capitalize;
+  color: var(--text-orange);
+  background-color: transparent;
+}
+.impersonate_btnmbl{
+  display: none;
+}
+.edit_btn {
+  width: 37px;
+  height: 37px;
+  border: 1.48px solid var(--bg-primary);
+  border-radius: 100px;
+  background-color: transparent;
+}
+.edit_btnmbl{
+  display: none;
+}
+.delete_btn {
+  width: 37px;
+  height: 37px;
+  border: 1.48px solid #ff5151;
+  border-radius: 100px;
+  background-color: transparent;
+}
+.delete_btnmbl{
+  display: none !important;
+}
+
+.inner_padding {
+  padding-left: 20px !important;
+}
+.id_style {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-dark-grey) !important;
+}
+.bold {
+  font-weight: 600;
+}
+.odd_row:nth-of-type(odd) {
+  background-color: #fafafa !important;
+}
+
+/*      Delete client Modal      */
+.delete_client_modal .modal-content {
+  padding: 20px 30px !important;
+}
+
+.delete_client_modal .modal-body {
+  text-align: center;
+}
+
+.delete_confirm {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 22px;
+  padding-bottom: 5px;
+}
+.delete_username {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+.delete_text {
+  color: var(--text-grey-2);
+  font-weight: 500;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.delete_footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.delete_footer .delete_btn {
+  color: var(--text-white);
+  font-weight: 500;
+  font-size: 18px;
+  width: 48%;
+  border-radius: 25px;
+  padding: 5px 0;
+  border: none !important;
+  background-color: #ff5151;
+}
+.delete_footer .cancel_btn {
+  color: var(--text-grey-2);
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 5px 0;
+  width: 48%;
+  border-radius: 25px;
+  border: 1px solid var(--text-grey-2) !important;
+}
+
+/*       Referral Modal       */
+.referral_modal .modal-content {
+  padding: 20px 30px !important;
+}
+
+.referral_modal .client_name {
+  text-align: center;
+  color: var(--text-dark-grey);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.modal_heading {
+  color: var(--text-grey-1);
+  font-size: 16px;
+}
+.packages_container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-block: 20px;
+}
+
+.package {
+  border: 1px solid var(--text-grey-2);
+  border-radius: 25px;
+  padding: 10px 20px 7px 20px;
+  color: var(--text-grey-2);
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  width: fit-content;
+  cursor: pointer !important;
+  font-family: 'Poppins';
+}
+.package .form-check,
+.package .form-check-input,
+.package .form-check-label {
+  cursor: pointer !important;
+}
+
+.package .form-check-input:checked {
+  background-color: var(--bg-primary) !important;
+  border-color: var(--bg-primary) !important;
+}
+
+.package input[type='checkbox']:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.package_active {
+  background-color: var(--bg-green-light);
+  color: var(--text-primary);
+  border: 1px solid var(--text-primary);
+}
+
+.referral_modal .modal_primary_btn {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  margin-top: 10px;
+}
+
+/*          Login Info Modal             */
+.info_text {
+  color: var(--text-grey-1);
+  font-size: 16px;
+  font-weight: 400;
+}
+.username_field {
+  border-radius: 25px;
+  border: 1px solid var(--text-grey-1);
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-dark-grey);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.username_field span {
+  color: var(--text-primary);
+}
+.username_field img {
+  cursor: pointer;
+}
+
+.copy_field,
+.copy_field:focus-visible {
+  border: none;
+  outline: none;
+  background-color: #fff !important;
+}
+.mobileActionButton{
+  display: none;
+}
+#mobileActionOptions{
+  display: none;
+}
+.report_divmbl{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .delete_btnmbl {
+    display: block !important;
+    width: 35px;
+    height: 35px;
+    border: 1.48px solid #ff5151;
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .edit_btnmbl {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1.48px solid var(--bg-primary);
+    /* border-radius: 100px; */
+    border-radius: 50%;
+    background-color: transparent;
+  }
+  .impersonate_btnmbl{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border: 1.48px solid var(--text-orange);
+    border-radius: 50%;
+    color: var(--text-orange);
+    background-color: transparent;
+  }
+  .report_divmbl{
+    display: block;
+  }
+  .mblBtnsWrapperSx{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .referral-btnmbl {
+    display: block;
+    border: 1.48px solid var(--bg-primary);
+    color: var(--bg-primary);
+    border-radius: 100px;
+    padding: 7px 12px;
+    /* gap: 10px; */
+    /* width: 62px; */
+    /* height: 37px; */
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: capitalize;
+    background-color: transparent;
+  }
+  .report_divmbl {
+    border: 1.48px solid var(--text-orange);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+  }
+  #mobileActionOptions{
+    position: absolute;
+    top: 15%;
+    right: 7%;
+    justify-content: space-between;
+     width: 83%;
+    flex-direction: row;
+    /* background-color:rgb(226, 223, 223); */
+    background-color: white;
+    height: 7rem;
+    align-items: center;
+    margin: auto !important;
+    margin-left: 14% !important;
+    padding: 4%;
+    border-radius: 20px 20px 20px 20px ;
+  }
+  .all_buttons{
+    display: none;
+  }
+  .mobileActionButton{
+    position: relative;
+    display: block;
+    height: 28px;
+  }
+  .mobileActionButton img{
+    height: 100%;
+   
+  }
+  .id_style {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  .bold {
+    font-weight: 600;
+  }
+}

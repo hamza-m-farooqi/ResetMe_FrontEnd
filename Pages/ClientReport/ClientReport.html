@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ClientReport.css" />
+    <link rel="stylesheet" href="../../CSS/GridLayout.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="../../CSS/common.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Smooch Sans" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.assessments_instruction_div').show();
+        $('.cancel_circle').show();
+        $('.cancel_circle').click(function () {
+          $('.assessments_instruction_div').hide();
+        });
+        $('.user_info_div_2').click(function () {
+          const tooltip = $('#tooltip');
+          if (tooltip.css('visibility') === 'visible') {
+            tooltip.css('visibility', 'hidden');
+          } else {
+            tooltip.css('visibility', 'visible');
+          }
+        });
+
+        $('body').click(function (e) {
+          console.log('Clickled ', e.target.className);
+          if (e.target.className && e.target.className !== 'user_info_div_2') {
+            console.log('HIDEEEE => ', e.target.className);
+
+            $('#tooltip').hide();
+          } else {
+            $('#tooltip').show();
+          }
+        });
+        function toggleDots() {
+  var showElement = document.getElementById("tooltipMLx");
+
+  if (showElement.style.display === "none") {
+    showElement.style.display = "block";
+  } else {
+    showElement.style.display = "none";
+  }
+}
+
+var button = document.getElementById("dotsBTN");
+
+button.addEventListener("click", toggleDots);
+button.addEventListener("blur", toggleDots);
+
+        /*      Hover Tooltip   */
+        $('.core_item_button_0').hover(
+          function () {
+            $('.core_tooltip_0').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_0').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_1').hover(
+          function () {
+            $('.core_tooltip_1').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_1').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_2').hover(
+          function () {
+            $('.core_tooltip_2').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_2').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_3').hover(
+          function () {
+            $('.core_tooltip_3').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_3').css('visibility', 'hidden');
+          }
+        );
+
+        $('.core_item_button_00').hover(
+          function () {
+            $('.core_tooltip_00').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_00').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_01').hover(
+          function () {
+            $('.core_tooltip_01').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_01').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_02').hover(
+          function () {
+            $('.core_tooltip_02').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_02').css('visibility', 'hidden');
+          }
+        );
+        $('.core_item_button_03').hover(
+          function () {
+            $('.core_tooltip_03').css('visibility', 'visible');
+          },
+          function () {
+            $('.core_tooltip_03').css('visibility', 'hidden');
+          }
+        );
+      });
+      function toggleMenu() {
+      // var dropdown = document.getElementById("show");
+      // if (dropdown.style.display === "none") {
+      //   dropdown.style.display = "block";
+      // } else {
+      //   dropdown.style.display = "none";
+      // }
+      var showElement = document.getElementById("show");
+    var randomName = document.getElementById("randomName");
+    
+    // Toggle the display of the "show" element
+    if (showElement.style.display === "none") {
+      showElement.style.display = "block";
+      randomName.style.display = "none";
+    } else {
+      showElement.style.display = "none";
+      randomName.style.display = "block";
+    }
+    };
+    </script>
+    <title>Client Report</title>
+  </head>
+
+  <body>
+    <div class="assessments agent report" style="position: relative">
+      <div class="left_side_assessments">
+        <div class="left_side_logo_div">
+          <img src="../../images/assessments/resetLogo.svg" class="left_side_logo" />
+        </div>
+        <div class="left_side_assessments_options left_side_agent_options mb-4">
+          <div class="agent_logo">
+            <img src="../../images/agent/logo.svg" alt="logo" />
+          </div>
+          <div class="agent_username">Robi Agent</div>
+          <span class="agent_view">Agent View</span>
+        </div>
+        <div class="help_center_div" style="position: relative">
+          <h2 style="padding-top: 4rem">Help Center</h2>
+          <h4
+            style="
+              padding-left: 3rem;
+              padding-right: 3rem;
+              color: #454238;
+              font-weight: 300;
+              line-height: 1.6;
+              font-size: 14px;
+            "
+          >
+            Having trouble with our service? Need help? Click the button below for assistance!
+          </h4>
+          <button class="contact_support_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Contact Support
+          </button>
+          <div
+            class="help_center_query"
+            style="
+              height: 6rem;
+              width: 6rem;
+              border-radius: 50%;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+            "
+          >
+            <div
+              style="
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+                background-color: #419eac;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+              "
+            >
+              ?
+            </div>
+          </div>
+        </div>
+        <div class="user_info_div">
+          <span class="tooltip-text" id="tooltip">
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#editProfile">
+              <span>
+                <img src="../../images/assessments/edit_profile.svg" />
+              </span>
+              <span class="ml-4"> Edit Profile</span>
+            </div>
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#logout">
+              <span class="pr-4">
+                <img src="../../images/assessments/logout.svg" />
+              </span>
+              <span> Logout</span>
+            </div>
+          </span>
+          <div class="user_info_div_1">
+            <span class="user_name">Younas Akram</span>
+            <span class="user_email">Client123</span>
+          </div>
+          <div class="user_info_div_2">
+            <img src="../../images/assessments/tooltipIcon.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="right_side_assessments" id="randomName">
+        <div class="breadcrumb_div report_breadcrumb">
+          <div class="adminClntImpMenuu" id="menu-toggle" onclick="toggleMenu()">
+            <img src="../../images/AdminClientImpersonate/VectorMenuIcon.svg" alt="" />
+         </div>
+          <div class="client_title">
+            <a href="#" class="client_back_btn"><img src="../../images/report/back.svg" /></a>
+            <div class="list_title">List of Clients</div>
+            <div class="report_name">/ &nbsp; Report</div>
+            <div class="client_count">3</div>
+          </div>
+          <button class="report_export_btn custom_btn">
+            Export Stress Management Report
+            <span><img src="../../images/report/download.svg" alt="download" /></span>
+          </button>
+          <div class="mblViewBtnDiv">
+            <img src="../../images/report/download.svg" alt="download" />
+          </div>
+        </div>
+
+        <!-- Place Report Content Here -->
+
+        <!--            CONTACT SUPPORT MODAL               -->
+        <!-- <div
+          class="modal custom_modal contact_modal"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contact Support</h5>
+                <button
+                  type="button"
+                  class="btn-close modal_close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  x
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="modal_text mb-4">Lorem Ipsum Ispum Lorem asimna</div>
+                <div class="col-12 text-start mb-3">
+                  <label for="staticEmail2" class="input_label">Email</label>
+                  <input
+                    type="text"
+                    class="form-control input_field"
+                    placeholder="Enter your email"
+                    id="staticEmail2"
+                  />
+                </div>
+                <div class="col-12 text-start mb-3">
+                  <label for="staticEmail2" class="input_label">Username</label>
+                  <input
+                    type="text"
+                    class="form-control input_field"
+                    placeholder="Enter your username"
+                    id="staticEmail2"
+                  />
+                </div>
+                <div class="col-12 text-start mb-3">
+                  <label for="staticEmail2" class="input_label">Your Message</label>
+                  <textarea
+                    class="form-control input_field"
+                    placeholder="Type something"
+                    id="staticEmail2"
+                    rows="3"
+                  ></textarea>
+                </div>
+                <button disabled class="modal_btn modal_primary_btn mt-4">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+
+      <!-- EDIT PROFILE -->
+      <div
+        class="modal custom_modal profile_modal"
+        id="editProfile"
+        tabindex="-1"
+        aria-labelledby="editProfile"
+        aria-hidden="false"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+              <button
+                type="button"
+                class="btn-close modal_close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                x
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_text mb-4">Lorem Ipsum Ispum Lorem asimna</div>
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Name</label>
+                <input
+                  type="text"
+                  class="form-control input_field"
+                  placeholder="Enter your name"
+                  id="staticEmail2"
+                />
+              </div>
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Username</label>
+                <input
+                  type="text"
+                  class="form-control input_field"
+                  placeholder="Enter your username"
+                  id="staticEmail2"
+                />
+              </div>
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Email</label>
+                <input
+                  type="text"
+                  class="form-control input_field"
+                  placeholder="Enter your email"
+                  id="staticEmail2"
+                />
+              </div>
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Password</label>
+                <button
+                  class="reset_button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#resetPasswordModal"
+                >
+                  <div>Reset Now</div>
+                  <img src="../../images/assessments/arrow_right.svg" alt="Go" />
+                </button>
+              </div>
+              <button class="modal_btn modal_primary_btn mt-4">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RESET PASSWORD PROFILE -->
+      <div
+        class="modal custom_modal reset_password_modal"
+        id="resetPasswordModal"
+        tabindex="3"
+        aria-labelledby="resetPasswordModal"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+              <button
+                type="button"
+                class="btn-close modal_close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                x
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="modal_text reset_description">
+                Password must be between 8 and 32 characters, with one each of: a capital letter, a
+                lowercase letter, a number, a special character
+              </div>
+
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Password</label>
+                <div class="password_field">
+                  <input
+                    type="password"
+                    class="form-control input_field"
+                    placeholder="Enter password here"
+                    id="staticEmail2"
+                  />
+                  <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+                </div>
+              </div>
+              <div class="col-12 text-start mb-3">
+                <label for="staticEmail2" class="input_label">Verify Password</label>
+                <div class="password_field">
+                  <input
+                    type="password"
+                    class="form-control input_field"
+                    placeholder="Verify password"
+                    id="staticEmail2"
+                  />
+                  <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+                </div>
+              </div>
+
+              <button disabled class="modal_btn modal_primary_btn mt-4">submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="modal logout_modal custom_modal"
+        id="logout"
+        tabindex="2"
+        aria-labelledby="logout"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close modal_close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                x
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="logout_text">Are you sure want to Logout Resetme</div>
+              <button class="modal_btn modal_primary_btn mt-4">Logout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- contact support  -->
+<div
+class="modal custom_modal contact_modal"
+id="exampleModal"
+tabindex="-1"
+aria-labelledby="exampleModalLabel"
+aria-hidden="true"
+>
+<div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">
+        Contact Support
+      </h5>
+      <button
+        type="button"
+        class="btn-close modal_close"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      >
+        x
+      </button>
+    </div>
+    <div class="modal-body">
+      <div class="modal_text mb-4">
+        Lorem Ipsum Ispum Lorem asimna
+      </div>
+      <div class="col-12 text-start mb-3">
+        <label for="staticEmail2" class="input_label">Email</label>
+        <input
+          type="text"
+          class="form-control input_field"
+          placeholder="Enter your email"
+          id="staticEmail2"
+        />
+      </div>
+      <div class="col-12 text-start mb-3">
+        <label for="staticEmail2" class="input_label">Username</label>
+        <input
+          type="text"
+          class="form-control input_field"
+          placeholder="Enter your username"
+          id="staticEmail2"
+        />
+      </div>
+      <div class="col-12 text-start mb-3">
+        <label for="staticEmail2" class="input_label"
+          >Your Message</label
+        >
+        <textarea
+          class="form-control input_field"
+          placeholder="Type something"
+          id="staticEmail2"
+          rows="3"
+        ></textarea>
+      </div>
+      <button disabled class="modal_btn modal_primary_btn mt-4">
+        Save changes
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+      <!-- menuuuuuu -->
+      <div class="agency_list_mblMenu" id="show">
+
+        <div class="logo_menu">
+          <div>
+            <img src="../../images/LandingImages/Logo-2.svg" alt="" />
+          </div>
+          <div  id="menu-toggle" onclick="toggleMenu()">
+            <img src="../../images/LandingImages/Cross.svg" alt="" />
+          </div>
+        </div>
+      
+        <div class="mob_navlinks_div">
+          <div class="WrapIconNname">
+            <div class="left_side_assessments_options left_side_agent_options mb-4">
+              <div class="agent_logo">
+                <img src="../../images/agent/logo.svg" alt="logo" />
+              </div>
+              <div class="agent_username">Robi Agent</div>
+              <span class="agent_view">Agent View</span>
+            </div>
+          </div>
+          <!-- <div class="WrapIconNname">
+            <div class="menuIcon_Div">
+              <img src="../../images/Vectoricognii.svg" alt="img">
+            </div>
+          <div class="inner_mob_nav_div">
+            
+            <a class="navlink_mob" >Agencies</a>
+          </div>
+          </div> -->
+         
+          <!-- <div class="WrapIconNname">
+            <div class="menuIcon_Div">
+              <img src="../../images/Vectorreload.svg" alt="img">
+            </div>
+          <div class="inner_mob_nav_div">
+            <a class="navlink_mob" >Content</a>
+          </div>
+        </div> -->
+      
+        </div>
+      
+        <div class="contactSuprtBtnDiv" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <button class="cntctSupportBtn">Contact support</button>
+        </div>
+        <div id="tooltipMLx" >
+          <span >
+            <div   data-bs-toggle="modal" data-bs-target="#editProfile">
+                <span>
+                    <img src="../../images/assessments/edit_profile.svg" />
+                </span>
+                <span class="ml-4"> Edit Profile</span>
+            </div>
+            <div class="tooltip_itemx" data-bs-toggle="modal" data-bs-target="#logout">
+                <span class="pr-4">
+                    <img src="../../images/assessments/logout.svg" />
+                </span>
+                <span> Logout</span>
+            </div>
+        </span>
+    </div>
+      
+        <div class="nameNactionsDiv">
+        <div class="menu_names_wrapperDiv">
+         <div> <p class="menu_name_lsitx">Younas Akram</p></div>
+          <div><p class="menu_name_2x"> Admin122</p></div>
+        </div>
+      
+        <div onclick="toggleDots()" onblur="toggleDots()" id="dotsBTN">
+      <img src="../../images/iconDotsRow.svg" alt="dots">
+        </div>
+        </div>
+      
+      
+      </div>
+    </div>
+  </body>
+</html>

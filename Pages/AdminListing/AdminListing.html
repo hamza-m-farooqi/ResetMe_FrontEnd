@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AdminListing.css" />
+    <link rel="stylesheet" href="../../CSS/GridLayout.css" />
+    <link rel="stylesheet" href="../../CSS/index.css" />
+    <link rel="stylesheet" href="../../CSS/common.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Smooch Sans" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.user_info_div_2').click(function () {
+                const tooltip = $('#tooltip');
+                if (tooltip.css('visibility') === 'visible') {
+                    tooltip.css('visibility', 'hidden');
+                } else {
+                    tooltip.css('visibility', 'visible');
+                }
+            });
+            $('body').click(function (e) {
+                if (e.target.className && e.target.className !== 'user_info_div_2') {
+                    $('#tooltip').hide();
+                } else {
+                    $('#tooltip').show();
+                }
+            });
+        });
+
+
+        function openLoginInfoModal() {
+  var modal = document.getElementById("loginInfoModal");
+  console.log("check")
+  modal.style.display = "block";
+};
+
+function toggleModal() {
+      var modal = document.getElementById("loginInfoModal");
+      if (modal.style.display === "none") {
+        modal.style.display = "block";
+      } else {
+        modal.style.display = "none";
+      }
+    
+    };
+
+        function toggleMenu() {
+      // var dropdown = document.getElementById("show");
+      // if (dropdown.style.display === "none") {
+      //   dropdown.style.display = "block";
+      // } else {
+      //   dropdown.style.display = "none";
+      // }
+      var showElement = document.getElementById("show");
+    var randomName = document.getElementById("randomName");
+    
+    // Toggle the display of the "show" element
+    if (showElement.style.display === "none") {
+      showElement.style.display = "block";
+      randomName.style.display = "none";
+    } else {
+      showElement.style.display = "none";
+      randomName.style.display = "block";
+    }
+    };
+
+    function toggleDots() {
+  var showElement = document.getElementById("tooltipMLx");
+
+  if (showElement.style.display === "none") {
+    showElement.style.display = "block";
+  } else {
+    showElement.style.display = "none";
+  }
+}
+
+var button = document.getElementById("dotsBTN");
+
+button.addEventListener("click", toggleDots);
+button.addEventListener("blur", toggleDots);
+
+    </script>
+    <title>Agency List</title>
+</head>
+
+<body>
+    <div class="assessments agent admin_listing" style="position: relative">
+        <div class="left_side_assessments">
+            <div class="left_side_logo_div">
+                <img src="../../images/assessments/resetLogo.svg" class="left_side_logo" />
+            </div>
+            <div class="left_side_assessments_options left_side_agent_options mb-4">
+                <div class="incognito_agent_parent_div">
+                    <div class="incognito_agent">
+                        <img class="incognito" src="../../images/AdminLoadContent/incognito.svg" alt="">
+                        <span>Agencies</span>
+                    </div>
+                </div>
+                <div class="incognito_agent_parent_div selected">
+                    <div class="incognito_agent">
+                        <img class="incognito" src="../../images/AdminLoadContent/Reload.svg" alt="">
+                        <span>Content</span>
+                    </div>
+                </div>
+            </div>
+            <div class="help_center_div" style="position: relative">
+                <h2 style="padding-top: 4rem">Help Center</h2>
+                <h4 style="
+              padding-left: 3rem;
+              padding-right: 3rem;
+              color: #454238;
+              font-weight: 300;
+              line-height: 1.6;
+              font-size: 14px;
+            ">
+                    Having trouble with our service? Need help? Click the button below
+                    for assistance!
+                </h4>
+                <button class="contact_support_btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Contact Support
+                </button>
+                <div class="help_center_query" style="
+              height: 6rem;
+              width: 6rem;
+              border-radius: 50%;
+              background-color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              
+            ">
+                    <div style="
+                height: 2.5rem;
+                width: 2.5rem;
+                border-radius: 50%;
+                background-color: #419eac;
+                color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: large;
+              ">
+                        ?
+                    </div>
+                </div>
+            </div>
+            <div class="user_info_div">
+                <span class="tooltip-text" id="tooltip">
+                    <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#editProfile">
+                        <span>
+                            <img src="../../images/assessments/edit_profile.svg" />
+                        </span>
+                        <span class="ml-4"> Edit Profile</span>
+                    </div>
+                    <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#logout">
+                        <span class="pr-4">
+                            <img src="../../images/assessments/logout.svg" />
+                        </span>
+                        <span> Logout</span>
+                    </div>
+                </span>
+                <div class="user_info_div_1">
+                    <span class="user_name">Younas Akram</span>
+                    <span class="user_email">Client123</span>
+                </div>
+                <div class="user_info_div_2">
+                    <img src="../../images/assessments/tooltipIcon.svg" />
+                </div>
+            </div>
+        </div>
+        <div class="right_side_assessments admin_right_side" id="randomName">
+            <div class="breadcrumb_div" id="breadCrumbDivCustom">
+                <div class="adminClntImpMenuu" id="menu-toggle" onclick="toggleMenu()">
+                    <img src="../../images/AdminClientImpersonate/VectorMenuIcon.svg" alt="" />
+                 </div>
+                <div class="agent_title">
+                    <a href="#" class="client_back_btn hidden"><img src="../../images/report/back.svg" /></a>
+                    <div class="list_title list_title_active ">List of Agencies</div>
+                    <span class="list_title hidden"> / &nbsp; Robi Agent <span class="client_count">3</span></span>
+                </div>
+                <div class="search">
+                    <div class="search_input_div">
+                        <input class="search_input" type="text" placeholder="Search" />
+                        <img class="search_img" src="../../images//agent/Search.svg" alt="" />
+                    </div>
+                    <!-- <div class="divSearchMbl"> 
+                        <img class="search_img" src="../../images//agent/Search.svg" alt="" />
+
+                    </div> -->
+                    <button class="export_client_btn">
+                        Export Agencies
+                        <span>
+                            <img class="download_img" src="../../images/agent/Download.svg" alt="" /></span>
+                    </button>
+                    <!-- <div class="divDownloadMblOnly">
+                        <img class="download_img" src="../../images/agent/Download.svg" alt="" />
+                    </div> -->
+                </div>
+                <div class="divDownloadMblOnly">
+                    <img class="download_img" src="../../images/agent/Download.svg" alt="" />
+                </div>
+            </div>
+            <div class="agent_container">
+                <div class="divSearchMbl">
+                    <input class="search_inputx" type="text" placeholder="Search" />
+                    <img class="search_imgx" src="../../images//agent/Search.svg" alt="" />
+                  </div>
+                <div class="agent_wrapper" id="agntWrapMl">
+                    <div class="client_div_green">
+                        
+                        <div class="inner_client_div">
+                            <div class="left_inner">
+                                <div class="robi_agent_div">
+                                    <img src="../../images/AdminClientImpersonate/Icon.svg" alt="" />
+                                    <h1 class="blue_robi">Robi Agent</h1>
+                                </div>
+                            </div>
+                            <div class="robi_agent_right_div">
+                                <button class="client_btn">Agent</button>
+                                <div class="divider"></div>
+                                <div>
+                                    <h1 class="name">Christopher</h1>
+                                    <span class="email">Demo@gmail.com</span>
+                                </div>
+                                <button class="edit_btn">
+                                    <img src="../../images/agent/Icon-7.svg" alt="" />
+                                </button>
+                                <button data-bs-target="#endImpersonateModal" data-bs-toggle="modal"
+                                    class="impersonation_btn">
+                                    End Impersonation
+                                    <img src="../../images//ImpersonateClient/circle.svg" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="table_footer">
+                    <div class="footer_left">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span class="next" aria-hidden="true">
+                                            < </span>
+                                    </a>
+                                </li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <span class="next" aria-hidden="true">></span>
+                                </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="table_pages">3 out of 3</div>
+                    </div>
+                    <div class="footer_right">
+                        <button data-bs-toggle="modal" data-bs-target="#addClientModal" id="add_client"
+                            class="add_client_btn">
+                            Add Agency
+                            <span>+</span>
+                        </button>
+                    </div>
+                    <div class="footer_rightx">
+                        <button data-bs-toggle="modal" data-bs-target="#addClientModal" id="add_client" class="add_client_btnx">
+                          +
+                        </button>
+                      </div>
+                </div>
+            </div>
+
+            <div class="modal custom_modal thanks_modal" id="endImpersonateModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="modal_title_div">
+                                <div class="modal-title end_impersonation" id="exampleModalLabel">
+                                    End Impersonation
+                                </div>
+                                <div class="modal-title" id="exampleModalLabel">AgRep19</div>
+                            </div>
+                            <button type="button" class="btn-close modal_close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_text end_impersonation_text">
+                                This will end your impersonation and return you to your original
+                                login account
+                            </div>
+                            <button class="modal_btn orange">End Impersonation</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RESET PASSWORD PROFILE -->
+            <div class="modal custom_modal reset_password_modal" id="resetPasswordModal" tabindex="3"
+                aria-labelledby="resetPasswordModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+                            <button type="button" class="btn-close modal_close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_text reset_description">
+                                Password must be between 8 and 32 characters, with one each of: a capital letter, a
+                                lowercase letter, a number, a special character
+                            </div>
+
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Password</label>
+                                <div class="password_field">
+                                    <input type="password" class="form-control input_field"
+                                        placeholder="Enter password here" id="staticEmail2" />
+                                    <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+                                </div>
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Verify Password</label>
+                                <div class="password_field">
+                                    <input type="password" class="form-control input_field"
+                                        placeholder="Verify password" id="staticEmail2" />
+                                    <img class="eye_icon" src="../../images/login/eye.svg" alt="hide password" />
+                                </div>
+                            </div>
+
+                            <button disabled class="modal_btn modal_primary_btn mt-4">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             <!--               Login info model           -->
+
+     <!-- <div
+     class="modal custom_modal contact_modal"
+     id="loginInfoModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true"
+   >
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">
+             Login Info
+           </h5>
+           <div onclick="toggleModal()">
+           <button
+             type="button"
+             class="btn-close modal_close"
+             data-bs-dismiss="modal"
+             aria-label="Close"
+             id="closeModalBtn"
+            
+           >
+             x
+           </button>
+          </div>
+         </div>
+         <div class="modal-body">
+           <div class="modal_text mb-4">
+             Please provide the login info to the agency represents
+           </div>
+          <div>
+           <div class="login_info_username">
+             <span class="blue_username">Username</span>
+             <span class="name_username">Younus1232</span>
+             <img src="../../images/copy_paste.svg" alt="">
+           </div>
+           <div class="login_info_username">
+             <span class="blue_username">Password</span>
+             <span class="name_username">6hTXs3Fb3B6R</span>
+             <img src="../../images/copy_paste.svg" alt="">
+           </div>
+          </div>
+         </div>
+       </div>
+     </div>
+   </div> -->
+            <!-- RESET PASSWORD Manually -->
+            <div class="modal custom_modal reset_password_manual" id="reset_password_manual" tabindex="3"
+                aria-labelledby="resetPasswordModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Reset Password</h5>
+                            <button type="button" class="btn-close modal_close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_text reset_description">
+                                Lorem Ipsum Ispum Lorem asimna
+                            </div>
+
+                            <div class="col-12 text-start mb-3">
+                                <button data-bs-toggle="modal" data-bs-target="#resetPasswordModal"
+                                    class="reset_password_btn manual_btn">Change Manually</button>
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <button class="reset_password_btn reset_byemail_btn">Email user to self-reset</button>
+                            </div>
+
+                            <button disabled class="modal_btn modal_primary_btn mt-4">submit</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- EDIT PROFILE -->
+            <div class="modal custom_modal profile_modal" id="editProfile" tabindex="-1" aria-labelledby="editProfile"
+                aria-hidden="false">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Edit Profile</h5>
+                            <button type="button" class="btn-close modal_close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_text mb-4">Lorem Ipsum Ispum Lorem asimna</div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Name</label>
+                                <input type="text" class="form-control input_field" placeholder="Enter your name"
+                                    id="staticEmail2" />
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Username</label>
+                                <input type="text" class="form-control input_field" placeholder="Enter your username"
+                                    id="staticEmail2" />
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Email</label>
+                                <input type="text" class="form-control input_field" placeholder="Enter your email"
+                                    id="staticEmail2" />
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Password</label>
+                                <button class="reset_button" data-bs-toggle="modal"
+                                    data-bs-target="#reset_password_manual">
+                                    <div>Reset Now</div>
+                                    <img src="../../images/assessments/arrow_right.svg" alt="Go" />
+                                </button>
+                            </div>
+                            <button class="modal_btn modal_primary_btn mt-4">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--            CONTACT SUPPORT MODAL               -->
+            <!-- <div class="modal custom_modal contact_modal" id="exampleModal" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">
+                                Contact Support
+                            </h5>
+                            <button type="button" class="btn-close modal_close" data-bs-dismiss="modal"
+                                aria-label="Close">
+                                x
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal_text mb-4">
+                                Lorem Ipsum Ispum Lorem asimna
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Email</label>
+                                <input type="text" class="form-control input_field" placeholder="Enter your email"
+                                    id="staticEmail2" />
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Username</label>
+                                <input type="text" class="form-control input_field" placeholder="Enter your username"
+                                    id="staticEmail2" />
+                            </div>
+                            <div class="col-12 text-start mb-3">
+                                <label for="staticEmail2" class="input_label">Your Message</label>
+                                <textarea class="form-control input_field" placeholder="Type something"
+                                    id="staticEmail2" rows="3"></textarea>
+                            </div>
+                            <button disabled class="modal_btn modal_primary_btn mt-4">
+                                Save changes
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+
+        <!--               Logout Modal            -->
+        <div class="modal logout_modal custom_modal" id="logout" tabindex="2" aria-labelledby="logout"
+            aria-hidden="true">
+            <div class="modal-dialog modal-sm modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close modal_close" data-bs-dismiss="modal" aria-label="Close">
+                            x
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logout_text">Are you sure want to Logout Resetme</div>
+                        <button class="modal_btn modal_primary_btn mt-4">Logout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--               Add Agency Modal            -->
+        <div class="modal custom_modal add_client_modal" id="addClientModal" tabindex="-1"
+            aria-labelledby="addClientModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                            Add Agency
+                        </h5>
+                        <button type="button" class="btn-close modal_close" data-bs-dismiss="modal" aria-label="Close">
+                            x
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal_text mb-4">
+                            Add a new agency and streamline your workflow with ease.
+                        </div>
+                        <div class="col-12 text-start mb-3">
+                            <label for="staticEmail2" class="input_label">Name</label>
+                            <input type="text" class="form-control input_field" placeholder="e.g. Ben Gate"
+                                id="staticEmail2" />
+                        </div>
+                        <div class="col-12 text-start mb-3">
+                            <label for="staticEmail2" class="input_label">Rep Name</label>
+                            <input type="text" class="form-control input_field" placeholder="e.g. Sales Head"
+                                id="staticEmail2" />
+                        </div>
+                        <div class="col-12 text-start mb-3">
+                            <label for="staticEmail2" class="input_label">Email</label>
+                            <input type="email" class="form-control input_field" placeholder="e.g. bengate@gmail.com"
+                                id="staticEmail2" />
+                        </div>
+                        <button class="modal_btn modal_primary_btn mt-4">
+                            Add Agency
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div
+        class="modal custom_modal contact_modal"
+        id="loginInfoModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                Login Info
+              </h5>
+              <div onclick="toggleModal()">
+              <button
+                type="button"
+                class="btn-close modal_close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+                id="closeModalBtn"
+               
+              >
+                x
+              </button>
+             </div>
+            </div>
+            <div class="modal-body">
+              <div class="modal_text mb-4">
+                Please provide the login info to the agency represents
+              </div>
+             <div>
+              <div class="login_info_username">
+                <span class="blue_username">Username</span>
+                <span class="name_username">Younus1232</span>
+                <img src="../../images/copy_paste.svg" alt="">
+              </div>
+              <div class="login_info_username">
+                <span class="blue_username">Password</span>
+                <span class="name_username">6hTXs3Fb3B6R</span>
+                <img src="../../images/copy_paste.svg" alt="">
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+    class="modal custom_modal contact_modal"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+    >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">
+            Contact Support
+          </h5>
+          <button
+            type="button"
+            class="btn-close modal_close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            x
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="modal_text mb-4">
+            Lorem Ipsum Ispum Lorem asimna
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label">Email</label>
+            <input
+              type="text"
+              class="form-control input_field"
+              placeholder="Enter your email"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label">Username</label>
+            <input
+              type="text"
+              class="form-control input_field"
+              placeholder="Enter your username"
+              id="staticEmail2"
+            />
+          </div>
+          <div class="col-12 text-start mb-3">
+            <label for="staticEmail2" class="input_label"
+              >Your Message</label
+            >
+            <textarea
+              class="form-control input_field"
+              placeholder="Type something"
+              id="staticEmail2"
+              rows="3"
+            ></textarea>
+          </div>
+          <button disabled class="modal_btn modal_primary_btn mt-4">
+            Save changes
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+
+        <!-- menuuu -->
+        <div class="agency_list_mblMenu" id="show">
+
+            <div class="logo_menu">
+              <div>
+                <img src="../../images/LandingImages/Logo-2.svg" alt="" />
+              </div>
+              <div  id="menu-toggle" onclick="toggleMenu()">
+                <img src="../../images/LandingImages/Cross.svg" alt="" />
+              </div>
+            </div>
+          
+            <div class="mob_navlinks_div">
+              <div class="WrapIconNname">
+                <div class="menuIcon_Div">
+                  <img src="../../images/Vectoricognii.svg" alt="img">
+                </div>
+              <div class="inner_mob_nav_div">
+                <a class="navlink_mob" >Agencies</a>
+              </div>
+              </div>
+          
+              <div class="WrapIconNname">
+                <div class="menuIcon_Div">
+                  <img src="../../images/Vectorreload.svg" alt="img">
+                </div>
+              <div class="inner_mob_nav_div">
+                <a class="navlink_mob" >Content</a>
+              </div>
+            </div>
+          
+            </div>
+          
+            <div class="contactSuprtBtnDiv" class="contactSuprtBtnDiv" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button class="cntctSupportBtn">Contact support</button>
+            </div>
+
+            <div id="tooltipMLx" >
+                <span >
+                  <div   data-bs-toggle="modal" data-bs-target="#editProfile">
+                      <span>
+                          <img src="../../images/assessments/edit_profile.svg" />
+                      </span>
+                      <span class="ml-4"> Edit Profile</span>
+                  </div>
+                  <div class="tooltip_itemx" data-bs-toggle="modal" data-bs-target="#logout">
+                      <span class="pr-4">
+                          <img src="../../images/assessments/logout.svg" />
+                      </span>
+                      <span> Logout</span>
+                  </div>
+              </span>
+          </div>
+          
+            <div class="nameNactionsDiv">
+            <div class="menu_names_wrapperDiv">
+             <div> <p class="menu_name_lsitx">Younas Akram</p></div>
+              <div><p class="menu_name_2x"> Admin122</p></div>
+            </div>
+          
+            <div onclick="toggleDots()" onblur="toggleDots()" id="dotsBTN">
+          <img src="../../images/iconDotsRow.svg" alt="dots" >
+            </div>
+            
+            </div>
+           
+          
+          </div>
+
+          <!-- <div id="tooltipML">
+          <span class="tooltip-text">
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#editProfile">
+                <span>
+                    <img src="../../images/assessments/edit_profile.svg" />
+                </span>
+                <span class="ml-4"> Edit Profile</span>
+            </div>
+            <div class="tooltip_item" data-bs-toggle="modal" data-bs-target="#logout">
+                <span class="pr-4">
+                    <img src="../../images/assessments/logout.svg" />
+                </span>
+                <span> Logout</span>
+            </div>
+        </span>
+    </div> -->
+
+    </div>
+</body>
+
+</html>
