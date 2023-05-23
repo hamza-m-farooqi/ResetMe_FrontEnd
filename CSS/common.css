@@ -1,0 +1,490 @@
+h1 {
+  margin: 0;
+}
+.assessments {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* leftSide classes */
+.left_side_assessments {
+  width: 24%;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #f7f9fa;
+  border-right: 1px solid #eceeef;
+}
+
+.left_side_logo_div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 15%;
+}
+
+.left_side_assessments::-webkit-scrollbar {
+  width: 2px;
+}
+
+.left_side_assessments::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.left_side_assessments::-webkit-scrollbar-thumb {
+  background-color: var(--text-grey-1);
+  outline: 1px solid var(--text-grey-1);
+}
+
+.left_side_logo {
+  padding-top: 5%;
+}
+.left_side_assessments_options {
+  display: flex;
+  flex-direction: column;
+  min-height: 42%;
+}
+.left_side_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 3rem;
+  padding: 2rem 2rem;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.left_side_options_text {
+  text-align: start;
+  padding-left: 3rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  font-size: medium;
+  color: #d9d9d9;
+}
+.left_side_options_text:hover {
+  color: #419eac;
+  cursor: pointer;
+}
+.help_center_div {
+  background-color: #eeeeee;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  border-radius: 17px;
+  text-align: center;
+}
+.help_center_div {
+  color: var(--text-dark-grey);
+}
+.help_center_query {
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.contact_support_btn {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #419eac;
+  background-color: #fff;
+  border: none;
+  font-size: 14px;
+  border-radius: 15px;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+}
+.user_info_div {
+  margin-top: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  position: relative;
+}
+.user_info_div_1 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+.user_info_div_2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
+  cursor: pointer;
+}
+.user_name {
+  font-size: medium;
+  color: #454238;
+  font-weight: 600;
+}
+.user_email {
+  font-size: small;
+  color: #454238;
+  font-weight: 300;
+}
+/* rightSide classes */
+
+.right_side_assessments {
+  height: 100%;
+  overflow: hidden;
+  width: 80%;
+  background-color: #fff;
+}
+.breadcrumb_div {
+  width: 100%;
+  height: 8%;
+  border-bottom: 1px solid #eceeef;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+.breadcrumb_text {
+  font-size: medium;
+  color: #919b9b;
+}
+.breadcrumb_text:hover {
+  cursor: pointer;
+}
+
+/*    Contact Suppport modal   */
+.contact_modal .modal-header {
+  text-align: center;
+}
+.contact_modal .modal-content {
+  text-align: center;
+}
+.contact_modal .modal_primary_btn {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  margin-top: 30px;
+}
+
+.contact_modal .modal_text {
+  color: var(--text-grey-1);
+  font-size: 16px;
+}
+
+.contact_modal .input_field {
+  box-shadow: none !important;
+}
+
+/*    Edit Profile modal   */
+
+.profile_modal .modal-header {
+  text-align: center;
+}
+.profile_modal .modal-content {
+  text-align: center;
+}
+.profile_modal .modal_primary_btn {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  margin-top: 30px;
+}
+
+.profile_modal .modal_text {
+  color: var(--text-grey-1);
+  font-size: 16px;
+}
+
+.profile_modal .input_label {
+  color: var(--text-primary) !important;
+}
+.profile_modal .input_field {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: 2px solid var(--text-primary) !important;
+}
+
+/*      Logout modal            */
+.logout_modal .modal-content {
+  padding: 15px 30px !important;
+}
+.logout_modal .logout_text {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+
+.logout_modal .modal_primary_btn {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-size: 16px;
+}
+
+.reset_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  color: var(--text-primary);
+  font-size: 16px;
+  background: transparent !important;
+  border-radius: 25px;
+  border: 1px solid var(--text-grey-1) !important;
+}
+
+/*      Reset Modal     */
+.reset_password_modal .password_field {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+}
+.modal-header h5 {
+  text-align: center;
+}
+.reset_password_modal .eye_icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  right: 1%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.reset_description {
+  color: var(--text-grey-1);
+  font-size: 16px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.reset_password_modal .modal_primary_btn {
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-size: 16px;
+}
+
+/*      Tooltip         */
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 2;
+  width: 100px;
+  color: var(--text-dark-grey);
+  font-size: 12px;
+  top: -120px;
+  padding: 20px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: #f7f9fa;
+  /* box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05); */
+  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.05));
+  border-radius: 10px;
+  width: 220px;
+  height: 92px;
+  gap: 10px;
+}
+
+.tooltip-text::before {
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  background-color: #f7f9fa;
+  padding: 10px;
+  z-index: 1;
+}
+#tooltip::before {
+  top: 83%;
+  left: 25%;
+}
+.tooltip_item {
+  cursor: pointer;
+}
+.assessments_instruction_title {
+  font-size: 28px;
+}
+.vertical_scroll {
+  overflow: auto;
+}
+/* End impersonate header */
+
+.robi_agent_div {
+  display: flex;
+  align-items: center;
+}
+.robi_agent_right_div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.client_div_green {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px rgba(65, 158, 172, 0.1);
+  border-radius: 20px;
+  background-image: url('../../images/AdminClientImpersonate/RESET.svg');
+  padding: 0.3rem 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+}
+.inner_client_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.blue_robi {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  display: flex;
+  color: #419eac;
+}
+.name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #ff8c39;
+}
+.impersonation_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 200px;
+  height: 40px;
+  border: 1.48px solid #ff8c39;
+  border-radius: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #ff8c39;
+  background-color: transparent;
+}
+.edit_btn {
+  width: 37px;
+  height: 37px;
+  border: 1.48px solid var(--bg-primary);
+  border-radius: 100px;
+  background-color: transparent;
+}
+.email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #919b9b;
+}
+.client_btn {
+  margin-left: 20px;
+  padding: 4px 16px;
+  width: 68px;
+  height: 25px;
+  background: rgba(255, 140, 57, 0.1);
+  border-radius: 10000px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ff8c39;
+}
+.number_of_client {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #919b9b;
+}
+
+/* impersonate header end */
+
+.end_impersonation {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  color: #ff8c39;
+}
+.modal_title_div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+.orange {
+  background: #ff8c39;
+  color: #ffffff;
+  margin-top: 30px;
+}
+.end_impersonation_text {
+  color: var(--text-grey-1);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media only screen and (max-width: 767px) {
+  
+.right_side_assessments{
+  width: 100%;
+  margin: auto;
+}
+.number_of_client {
+  font-size: 17px !important;
+}
+.blue_robi {
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  min-width: 55% !important;
+}
+.all_btns{
+  display: flex;
+  flex-direction: column;
+}
+.assessments_instruction_title {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+.assessments_instruction_description{
+  text-align: justify;
+}
+.robi_agent_right_div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+.robi_agent_right_div .email{
+  display: none;
+}
+.robi_agent_right_div .edit_btn{
+  display: none;
+}
+.robi_agent_right_div .divider{
+  display: none;
+}
+.client_div_green {
+  border-radius: 0px !important;
+  padding: 0.3rem 0rem;
+}
+.inner_client_div{
+  padding: 2% 4%;
+}
+.impersonation_btn {
+  gap: 5px;
+  width: 160px;
+  height: 35px;
+  font-weight: 700;
+  font-size: 12px;
+}
+}

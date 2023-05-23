@@ -1,0 +1,239 @@
+:root {
+  /*   Text colors    */
+  --text-white: #ffffff;
+  --text-primary: #419eac;
+  --text-primary-2: #8ac0c8;
+  --text-dark-grey: #454238;
+  --text-grey-1: #afafaf;
+  --text-grey-2: #919b9b;
+  --text-orange: #ff8c39;
+  --text-light-grey: #d9d9d9;
+  --text-yellow: #e5d117;
+  --text-red: #ff5d39;
+  --text-green: #47b45f;
+
+  /*   background colors    */
+  --bg-primary: #419eac;
+  --bg-orange: #ff5d39;
+  --bg-grey: #e1e1e1;
+  --bg-gray-2: #919b9b1a;
+  --bg-green-light: rgba(65, 158, 172, 20%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*    Forgot Modal    */
+
+.custom_modal {
+  position: absolute;
+  background: rgba(65, 158, 172, 0.2);
+}
+
+.custom_modal .modal-content {
+  padding: 20px 50px;
+  border-radius: 32px;
+  box-shadow: none;
+  border: none;
+}
+.custom_modal .modal_close {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--bg-orange) !important;
+  opacity: 1;
+  outline: none !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 50%;
+  padding: 7px 7px 12px 7px !important;
+  /* height: 20px; */
+  width: 24px;
+  font-size: 20px;
+  line-height: 0px;
+  font-stretch: extra-expanded;
+}
+.custom_modal .modal_close:focus {
+  box-shadow: none !important;
+}
+.custom_modal .modal_close:hover {
+  opacity: unset;
+}
+.custom_modal .modal-header {
+  border-bottom: none;
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 600;
+  padding: 10px 0 0 0 !important;
+  margin-bottom: 5px;
+}
+.custom_modal .input_field {
+  border-radius: 25px;
+  font-size: 16px;
+  color: #000;
+  border-radius: 24px;
+  font-size: 16px;
+  margin-top: 5px;
+  padding: 20px 20px;
+}
+
+.input_field:focus {
+  box-shadow: none !important;
+  border-color: transparent !important;
+  outline: 2px solid var(--text-primary) !important;
+}
+
+.custom_modal .input_field::placeholder {
+  color: var(--text-grey-2) !important;
+}
+
+.custom_modal .input_label {
+  color: var(--text-grey-1);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.custom_modal .modal-header .modal-title {
+  width: 100%;
+  font-size: 28px !important;
+}
+
+.custom_modal .modal-body {
+  padding: 0 0 20px 0;
+}
+
+.modal_btn {
+  width: 100%;
+  border-radius: 25px;
+  font-size: 18px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  padding: 10px;
+  border: none;
+}
+
+button:disabled {
+  background-color: var(--bg-grey) !important;
+  color: var(--text-grey-2) !important;
+}
+
+.agent_username {
+  color: var(--text-primary);
+  font-size: 20px;
+  font-weight: 600;
+  padding-block: 10px;
+}
+.agent_view {
+  background-color: var(--bg-gray-2);
+  display: inline-block;
+  color: var(--text-grey-2);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border-radius: 25px;
+}
+.left_side_agent_options {
+  align-items: center;
+}
+
+.agent .agent_logo {
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.agent_title {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 20px;
+}
+.client_count {
+  font-size: 20px;
+  color: var(--text-grey-2);
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.custom_btn {
+  border-radius: 20px;
+  padding: 8px 20px;
+}
+
+/*    General classes   */
+.bg_yellow {
+  background-color: var(--text-yellow);
+}
+.bg_red {
+  background-color: var(--text-red);
+}
+.bg_green {
+  background-color: var(--text-green);
+}
+
+.border_yellow {
+  border: 1px solid var(--text-yellow);
+}
+.border_red {
+  border: 1px solid var(--text-red);
+}
+.border_green {
+  border: 1px solid var(--text-green);
+}
+
+.text_yellow {
+  color: var(--text-yellow);
+}
+.text_red {
+  color: var(--text-red);
+}
+.text_green {
+  color: var(--text-green);
+}
+
+
+@media only screen and (max-width: 767px) {
+  .custom_modal .modal-content {
+    padding: 16px 20px;
+    border-radius: 32px;
+    box-shadow: none;
+    border: none;
+  }
+  .agent_view {
+    background-color: var(--bg-gray-2);
+    display: inline-block;
+    color: var(--text-grey-2);
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 20px;
+    border-radius: 25px;
+    background-color: white;
+  }
+  .agent_username {
+    color: var(--text-primary);
+    font-size: 20px !important;
+    font-weight: 600;
+    padding-block: 10px;
+    color: white !important;
+  }
+  .custom_modal{
+   padding: 5%;
+  }
+  .custom_modal .modal-header .modal-title {
+    width: 100%;
+    font-size: 23px !important;
+  }
+  .modal_btn {
+    font-size: 16px;
+    
+  }
+  .custom_modal .modal_close {
+    padding: 4px 5px 10px 7px !important;
+    width: 20px;
+  }
+  .agent_title {
+    font-weight: 600;
+    font-size: 16px;
+  }
+}
